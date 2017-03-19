@@ -29,7 +29,8 @@ public class Railway extends AppCompatActivity {
     {
         // Check whether the user has google play services
         // Using Predefined Class
-        GoogleApiAvailability api = new GoogleApiAvailability.getInstance();
+        GoogleApiAvailability api =  GoogleApiAvailability.getInstance();
+        //getInstance returns singleton instance of Googleapiavalability
         // Checking if google play services is available in this  Activity
         int isAvaiable = api.isGooglePlayServicesAvailable(this);
         if(isAvaiable == ConnectionResult.SUCCESS)
